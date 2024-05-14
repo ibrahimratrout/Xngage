@@ -42,7 +42,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-family: "Reddit Sans", sans-serif;
+    /* font-family: "Reddit Sans", sans-serif; */
     padding: 10px 15px;
     border-bottom: 4px solid var(--mainRed);
 }
@@ -60,6 +60,7 @@ nav ul{
     padding: 0px 16px;
     text-transform: uppercase;
     font-weight: bold;
+    font-family: "Reddit Sans", sans-serif;
     color:var(--mainTextColor);
     display: flex;
        
@@ -82,15 +83,21 @@ nav ul{
 
 .search{
     font-weight: bold;
-    font-size: 1.1em;
+    /* font-size: 0.9em; */
     font-family: "Reddit Sans", sans-serif;
     color: var(--mainTextColor);
     display: flex;
     align-items: center;
     margin-right: 2%;
     gap: 5px;
+    text-transform: uppercase;
 }
-
+.search p{
+    color: var(--mainTextColor);
+}
+.search-mobile{
+    margin-top: 3%;
+}
 
 /* How the website react with small devices */
 @media screen and (max-width:800px){
@@ -113,6 +120,10 @@ nav ul{
 
     .search p{
         display: none;
+    }
+
+    .search-mobile{
+        margin-left: 6%;
     }
     
 
