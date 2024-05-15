@@ -6,6 +6,11 @@
     font-size: 14px;
 }
 
+.notification-bar a{
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
 a{
     text-decoration: none;
     color: var(--blackText);
