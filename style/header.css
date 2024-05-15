@@ -119,6 +119,8 @@ nav ul{
 
     .burger-btn{
         display: inline-block;
+        align-items: center;
+        margin-top: 1%;
     }
     
     nav a{
