@@ -1,68 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="assets/tab-icon.png">
     <title>XNGAGE</title>
     <!--Connect with external css file-->
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style/index.css">
     <!--To use icon by fontawsome library-->
-    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!--Main header for website-->
     <header>
         <!--First div in header that contain notification-->
         <div class="notification-bar">
-            <p>Cleaver-Brooks ClearFire&reg;-CE Condensing Boiler Named Most Valuable Product of the Year by Industry Professionals. <a href="#">learn more     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </a></p>
-        </div> 
+            <div class="container">
+                <p>Cleaver-Brooks ClearFire&reg;-CE Condensing Boiler Named Most Valuable Product of the Year by
+                    Industry Professionals. <a href="#">learn more <i class="fa fa-long-arrow-right"
+                            aria-hidden="true"></i>
+                    </a></p>
+            </div>
+        </div>
         <!--The second div about contact, and its clickable-->
         <div class="contact">
-            <div class="Rep">
-                <i class="fa fa-user" aria-hidden="true"></i>
-                <a href="#"><p>Find a Rep</p></a>
+            <div class="container">
+                <div class="rep">
+                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <a href="#">
+                        <p>Find a Rep</p>
+                    </a>
+                </div>
+                <div class="parts">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    <a href="#">
+                        <p>Parts Store</p>
+                    </a>
+                </div>
             </div>
-            <div class="Parts">
-                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                <a href="#"><p>Parts Store</p></a>
-            </div>
-        </div> 
+        </div>
         <!--The last div is the main navigation-->
         <nav>
-            <label class="burger-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#003150"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-            </label>
-            <a href="#" class="logo">
-                <img src="assets/XNGAGE-logo.png" alt="XNGAGE" width="160px">
-            </a>
-            
-            <ul class="menu">            
-    
-                <li><a href="#">solution</a></li>
-                <li><a href="#">products</a></li>
-                <li><a href="#">rentals</a></li>
-                <li><a href="#">industries</a></li>
-                <li><a href="#">education & training</a></li>
-                <li><a href="#">company info</a></li>    
-                <!-- <li><a href="#">search<i class="fa fa-search search-icon" aria-hidden="true"></i></a></li> -->
-            </ul>
-            <div class="search">
-                <a href="#"><p>Search</p></a>
-                <label class="search-mobile">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#003150"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+            <div class="container">
+                <label class="burger-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px"
+                        fill="#003150">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>
                 </label>
-            
+                <a href="#" class="logo">
+                    <img src="assets/XNGAGE-logo.png" alt="XNGAGE" width="160px">
+                </a>
+
+                <ul class="menu">
+
+                    <li><a href="#">solution</a></li>
+                    <li><a href="#">products</a></li>
+                    <li><a href="#">rentals</a></li>
+                    <li><a href="#">industries</a></li>
+                    <li><a href="#">education & training</a></li>
+                    <li><a href="#">company info</a></li>
+                    <!-- <li><a href="#">search<i class="fa fa-search search-icon" aria-hidden="true"></i></a></li> -->
+                </ul>
+                <div class="search">
+                    <a href="#">
+                        <p>Search</p>
+                    </a>
+                    <label class="search-mobile">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                            fill="#003150">
+                            <path
+                                d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                        </svg>
+                    </label>
+
+                </div>
             </div>
-          
         </nav>
     </header>
 
 
 
 
-   
-    
+
+
 </body>
+
 </html>
