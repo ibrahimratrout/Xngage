@@ -4,6 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
 .container{
     width: 100%;
     max-width: 1330px;
