@@ -48,9 +48,10 @@
 nav {
     box-shadow: 0 -1px 6px rgba(0, 49, 80, 0.15);
     border-bottom: 6px solid var(--mainRed);
+    
 }
 
-nav>div {
+nav > div {
     display: flex;
     justify-content: space-around;
 }
@@ -100,6 +101,71 @@ nav ul {
     display: none;
 }
 
+/* menu mega */
+nav li:hover{
+    border-bottom:2px solid red ;
+}
+
+/* .menu li:hover .mega-box{
+    transition: all 0.3s ease;
+    top: 29%;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .mega-box{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    top: 30px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .mega-box .content-menu{
+    background: #242526;
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+  .mega-box .content-menu .row{
+    width: calc(25% - 30px);
+    line-height: 45px;
+  }
+  .content-menu .row img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: red;
+  }
+  .content-menu .row header{
+    color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .row i{
+    display: inline;
+  }
+  .content-menu .row .mega-links{
+    margin-left: -40px;
+    border-left: 1px solid rgba(255,255,255,0.09);
+  }
+  .row .mega-links li{
+    padding: 0 20px;
+  }
+  .row .mega-links li a{
+    padding: 0px;
+    padding: 0 20px;
+    color: #d9d9d9;
+    font-size: 17px;
+    display: block;
+  }
+  .row .mega-links li a:hover{
+    color: #f2f2f2;
+  } */
+
 .search {
     font-weight: bold;
     font-family: "Roboto", sans-serif;
@@ -139,7 +205,8 @@ nav ul {
         background-color: white;
         width: 85%;
         /* height: 100%; */
-        height: auto;
+        height: 100%;
+        min-height: 800px;
         
     }
 
@@ -147,6 +214,7 @@ nav ul {
         padding: 20px;
         width: 100%;
         border-bottom: 2px solid var(--notiBackground);
+        height: auto;
     }
     
     .menu i{
@@ -204,6 +272,15 @@ nav ul {
 
     #sidebar-active:checked~ul {
         display: flex;
+    }
+
+    #sidebar-active:checked ~ #overlay{
+        background-color: rgba(151,151,151,0.5);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
     }
 
 
