@@ -212,6 +212,12 @@ nav li:hover{
         border-bottom: 2px solid var(--notiBackground);
         height: auto;
     }
+   
+    
+    nav li:hover{
+        background-color: rgba(151,151,151,0.5);
+        border-bottom:0px solid transparent ;
+    }
     
     .menu i{
         display: inline;
