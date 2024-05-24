@@ -1,4 +1,5 @@
-/* first component in the header */
+/* Header for the website */
+/* First component in the header */
 
 .notification-bar {
     background-color: var(--notiBackground);
@@ -12,8 +13,6 @@
     text-transform: capitalize;
     color: var(--blackText);
 }
-
-
 
 /* second component for the header */
 
@@ -44,13 +43,10 @@
 
 
 /* third component for the header */
-
-
 nav {
     box-shadow: 0 -1px 6px rgba(0, 49, 80, 0.15);
     border-bottom: 6px solid var(--mainRed);
     position: relative;
-
 }
 
 nav>div {
@@ -83,30 +79,18 @@ nav ul {
 
 
 /* responsive */
-.connect-rep-part {
-    display: none;
-}
-
-.menu i {
-    display: none;
-}
-
-#sidebar-active {
-    display: none;
-}
-
-.burger-btn {
-    display: none;
-}
-
+.connect-rep-part,
+.menu i,
+#sidebar-active,
+.burger-btn,
 .close-sidebar {
     display: none;
 }
 
 
-
 /* menu mega  */
-nav li:hover {
+nav li:hover,
+nav .search:hover {
     border-bottom: 2px solid var(--mainTextColor);
 }
 
@@ -230,18 +214,19 @@ nav li:hover {
     width: 85%;
     height: 250px;
     object-fit: cover;
-    margin-left: 11.5%;
+    margin-left: 14%;
 }
 
-.boilers:hover .sub2-menu {
-    display: inline-block;
-    opacity: 1;
-}
-
+.boilers:hover .sub2-menu,
 .firetube:hover .sub3-menu {
     display: inline-block;
     opacity: 1;
 }
+
+/* .firetube:hover .sub3-menu {
+    display: inline-block;
+    opacity: 1;
+} */
 
 .mega-box i {
     display: inline;
@@ -270,6 +255,7 @@ nav li:hover {
     margin-top: 3%;
 }
 
+
 /* How the website react with small devices */
 @media screen and (max-width:800px) {
 
@@ -292,17 +278,19 @@ nav li:hover {
         top: 0;
         left: 0;
         z-index: 10;
+        /* background-color: red; */
         background-color: white;
         width: 85%;
+        /* height: 100vh; */
     }
 
     nav li {
-        padding: 20px;
+        padding: 20px 5px;
         width: 100%;
         border-bottom: 2px solid var(--notiBackground);
         height: auto;
+        /* background-color: black; */
     }
-
 
     nav li:hover {
         background-color: rgba(151, 151, 151, 0.5);
@@ -326,14 +314,14 @@ nav li:hover {
         padding: 20px;
     }
 
-    .rep-menu {
-        padding: 28px;
-
-    }
-
+    .rep-menu,
     .parts-menu {
-        padding: 28px;
+        padding: 20px 8px;
     }
+
+    /* .parts-menu {
+        padding: 28px;
+    } */
 
     .connect-rep-part p {
         display: inline;
@@ -344,6 +332,68 @@ nav li:hover {
     }
 
 
+    /* mega on mobile */
+
+    .products:hover .mega-box {
+        display: flex;
+        opacity: 1;
+        position: absolute;
+        top: 80px;
+        /* width: 120%; */
+        /* background-color: blue; */
+    }
+
+    .products:hover .sub1-menu {
+        /* padding: 20px; */
+        width: 100%;
+        /* background-color: red; */
+    }
+
+    .products:hover .sub1-menu li {
+        padding: 18px 30px;
+        width: 117.3%;
+        height: inherit;
+        /* background-color: red; */
+        background-color: white;
+    }
+
+    .products:hover .sub1-menu li:hover {
+        background-color: cornflowerblue;
+    }
+
+    .boilers:hover .sub2-menu,
+    .firetube:hover .sub3-menu {
+        display: none;
+        opacity: 0;
+    }
+
+    /* 
+    .firetube:hover .sub3-menu {
+        display: none;
+        opacity: 0;
+    } */
+
+    .mega-box .img-menu,
+    .mega-box i {
+        display: none;
+    }
+
+    /* 
+    .mega-box i {
+        display: none;
+    } */
+
+    .products:hover li.nav {
+        border-bottom: 0 solid transparent;
+    }
+
+
+    /* .products:focus .mega-box{
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    } */
+
     /* menu header */
 
     .menu-header {
@@ -352,16 +402,18 @@ nav li:hover {
         /* background-color: red; */
         width: 100%;
         border-bottom: 3px solid var(--mainRed);
+        /* background-color: yellow; */
+        background-color: white;
     }
 
 
     .close-sidebar {
         display: flex;
         align-items: center;
-        padding-left: 6%;
+        /* padding-left: 6%; */
+        padding-left: 20px;
         padding-top: 4%;
         margin-bottom: 4%;
-
     }
 
     #sidebar-active:checked~ul {
@@ -369,7 +421,7 @@ nav li:hover {
     }
 
     #sidebar-active:checked~#overlay {
-        background-color: rgba(151, 151, 151, 0.5);
+        background-color: var(--overlayColor);
         width: 100%;
         height: 100%;
         position: fixed;
@@ -377,13 +429,9 @@ nav li:hover {
         right: 0;
     }
 
-
-
-
-
-
     nav {
         box-shadow: 0 0 0 0;
+        /* To remove shadow in responsive-side */
     }
 
     .burger-btn {
@@ -392,15 +440,16 @@ nav li:hover {
         margin-top: 1%;
     }
 
+
     .logo {
         display: block;
+        /* To center the logo when became mobile */
         margin: 0 auto;
     }
 
     .search-mobile {
         margin-left: 6%;
         margin-bottom: 20%;
-
     }
 
 
