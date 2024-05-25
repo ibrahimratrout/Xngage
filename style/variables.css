@@ -5,6 +5,10 @@
     --mainRed:#AA272F;
     /* --contactColor: rgba(211,222, 228,0.5); */
     --contactColor:rgba(249, 248, 246,0.5);
-    --overlayColor:rgba(151, 151, 151, 0.4);
+    --overlayColor:rgba(151,151,151,0.5);
+    --hoverTextMega:rgba(151,142,134,255);
+    --megaColorMobile:rgba(249,248,246,255);
+    --hoverColorList:rgba(151, 151, 151, 0.5);
+    --imgMega:rgba(236,233,228,255);
 }
 

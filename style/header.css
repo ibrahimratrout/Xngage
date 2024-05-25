@@ -102,7 +102,7 @@ nav .search:hover {
 .products:hover .mega-box {
     transition: all 1s ease;
     opacity: 1;
-    display: flex;
+    display: inline-block;
     visibility: visible;
 }
 
@@ -121,7 +121,6 @@ nav .search:hover {
 .mega-box>div {
     padding: 0;
     position: relative;
-    /* display: flex; */
 }
 
 
@@ -130,7 +129,7 @@ nav .search:hover {
     padding: 2% 2%;
     height: 470px;
     border: none;
-    border-left: 2px solid var(--notiBackground);
+    border-left: 1px solid var(--notiBackground);
     border: none;
     width: 73%;
     background-color: white;
@@ -142,7 +141,7 @@ nav .search:hover {
     padding: 3% 1%;
     height: 470px;
     border: none;
-    border-left: 2px solid var(--notiBackground);
+    border-left: 1px solid var(--notiBackground);
     top: 0;
     left: 36%;
     width: 66%;
@@ -156,14 +155,13 @@ nav .search:hover {
     padding: 5% 2%;
     height: 470px;
     border: none;
-    border-left: 2px solid var(--notiBackground);
+    border-left: 1px solid var(--notiBackground);
     top: 0;
     left: 50%;
     width: 50%;
     display: none;
     opacity: 0;
     background-color: white;
-    /* padding-top: 4%; */
 }
 
 .mega-box ul {
@@ -181,7 +179,7 @@ nav .search:hover {
 }
 
 .mega-box ul li:hover>a {
-    color: var(--notiBackground);
+    color: var(--hoverTextMega);
 }
 
 .mega-box .img-menu {
@@ -189,7 +187,7 @@ nav .search:hover {
     height: 470px;
     flex-direction: column;
     width: 27%;
-    background-color: rgba(215, 211, 199, 0.5);
+    background-color: var(--imgMega);
     position: absolute;
     right: 0;
 }
@@ -204,7 +202,7 @@ nav .search:hover {
 }
 
 .mega-box .img-menu a {
-    color: rgb(149, 165, 166);
+    color: var(--hoverTextMega);
     padding-top: 10px;
     text-transform: none;
     padding-left: 25px;
@@ -223,15 +221,9 @@ nav .search:hover {
     opacity: 1;
 }
 
-/* .firetube:hover .sub3-menu {
-    display: inline-block;
-    opacity: 1;
-} */
-
 .mega-box i {
     display: inline;
 }
-
 
 /* end mega */
 
@@ -266,6 +258,7 @@ nav .search:hover {
 
     nav {
         position: static;
+        height: 100%;
     }
 
 
@@ -278,10 +271,8 @@ nav .search:hover {
         top: 0;
         left: 0;
         z-index: 10;
-        /* background-color: red; */
-        background-color: white;
+        background-color: var(--megaColorMobile);
         width: 85%;
-        /* height: 100vh; */
     }
 
     nav li {
@@ -289,11 +280,11 @@ nav .search:hover {
         width: 100%;
         border-bottom: 2px solid var(--notiBackground);
         height: auto;
-        /* background-color: black; */
+        background-color: white;
     }
 
     nav li:hover {
-        background-color: rgba(151, 151, 151, 0.5);
+        background-color: var(--hoverColorList);
         border-bottom: 0px solid transparent;
     }
 
@@ -316,12 +307,9 @@ nav .search:hover {
 
     .rep-menu,
     .parts-menu {
-        padding: 20px 8px;
+        padding: 25px 8px;
     }
 
-    /* .parts-menu {
-        padding: 28px;
-    } */
 
     .connect-rep-part p {
         display: inline;
@@ -338,23 +326,18 @@ nav .search:hover {
         display: flex;
         opacity: 1;
         position: absolute;
-        top: 80px;
-        /* width: 120%; */
-        /* background-color: blue; */
+        top: 100px;
     }
 
     .products:hover .sub1-menu {
-        /* padding: 20px; */
         width: 100%;
-        /* background-color: red; */
     }
 
     .products:hover .sub1-menu li {
-        padding: 18px 30px;
+        padding: 18px 20px;
         width: 117.3%;
         height: inherit;
-        /* background-color: red; */
-        background-color: white;
+        background-color: var(--megaColorMobile);
     }
 
     .products:hover .sub1-menu li:hover {
@@ -367,42 +350,24 @@ nav .search:hover {
         opacity: 0;
     }
 
-    /* 
-    .firetube:hover .sub3-menu {
-        display: none;
-        opacity: 0;
-    } */
-
+  
     .mega-box .img-menu,
     .mega-box i {
         display: none;
     }
-
-    /* 
-    .mega-box i {
-        display: none;
-    } */
 
     .products:hover li.nav {
         border-bottom: 0 solid transparent;
     }
 
 
-    /* .products:focus .mega-box{
-        display: flex;
-        opacity: 1;
-        visibility: visible;
-    } */
-
+    
     /* menu header */
 
     .menu-header {
         display: flex;
-        /* align-items: center; */
-        /* background-color: red; */
         width: 100%;
         border-bottom: 3px solid var(--mainRed);
-        /* background-color: yellow; */
         background-color: white;
     }
 
@@ -410,7 +375,6 @@ nav .search:hover {
     .close-sidebar {
         display: flex;
         align-items: center;
-        /* padding-left: 6%; */
         padding-left: 20px;
         padding-top: 4%;
         margin-bottom: 4%;
