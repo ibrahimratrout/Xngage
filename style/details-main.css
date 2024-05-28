@@ -1,0 +1,95 @@
+/* Design for second section */
+.details-main{
+    padding: 2em 2em;
+}
+
+.details-main> div{
+    display: flex;
+    position: relative;
+} 
+
+
+
+.details-main .title-details{
+    font-size: 1.1em;
+    line-height: 5em;
+    display: flex;
+    align-items: center;
+    padding-right: 1.8em;
+    text-transform: capitalize;
+    white-space: nowrap;
+    border-right: 2px solid var(--notiBackground);
+}
+
+.details-main .info-datails{
+    font-size: 0.93em;
+    padding-top: 0.7em;
+    padding-left: 2em;
+    padding-right: 18em;
+}
+
+.details-main .box-details{
+    position: absolute;
+    background-color: var(--mainRed);
+    font-size: 0.9em;
+    right: 2%;
+    top: -4.2em;
+    max-width: 200px;
+    padding: 18px 20px;
+    background-image: url(../assets/fire-flame.svg);
+    background-position: 107% bottom;
+    background-repeat: no-repeat;
+    background-size: 140px;
+    color: var(--mainWhite);
+}
+
+.box-details p{
+    margin-bottom: 10px;
+}
+
+.box-details a{
+    color: var(--mainWhite);
+    margin-top: 20px;
+    font-size: 0.8em;
+}
+
+
+
+@media screen and (max-width:800px){
+    /* the second section in the main */
+    .details-main{
+        padding: 1em 1em;
+    }
+
+    .details-main>div{
+        display: inline-block;
+    }
+
+    .details-main .title-details{
+        padding-right: 0;
+        line-height: 0;
+        justify-content: center;
+        border: 0;
+        padding: 20px;
+        padding-bottom: 1.5em;
+    }
+    
+    .details-main .info-datails{
+        font-size: 1.1em;
+        padding-top: 0.7em;
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-bottom: 1.5em;
+    }
+
+    .details-main .box-details{
+        position: static;
+        line-height: 2em;
+        /* max-width: inherit; */
+        max-width: inherit;
+        padding-top: 2em;
+        background-position: 98% bottom;
+        background-size: 125px;
+    }
+
+}
