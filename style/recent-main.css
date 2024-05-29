@@ -78,7 +78,7 @@
   .cardButton {
     border: none;
     outline: 0;
-    padding: 1em;
+    padding: 0.7em;
     color: var(--mainWhite);
     background-color: var(--mainTextColor);
     text-align: center;
