@@ -1,0 +1,122 @@
+/* cards design */
+.cards{
+    margin-top: 2.5em;
+}
+.caption-card h2{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.8em;
+}
+.caption-card span{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+    color: var(--solutionSpanColor);
+}
+.caption-card span a{
+    color: var(--solutionSpanColor);
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.all-cards {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+    margin: 1em 0 1.5em;
+}
+
+
+.card-style {
+    width: 31%;
+}
+.card-style a{
+    text-transform: capitalize;
+    color:var(--mainTextColor);
+    font-weight: 600;
+}
+
+.content-card {
+    padding: 1.5em 0;
+}
+
+.content-card h3 {
+    margin-bottom: 1em;
+}
+
+.content-card p {
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+
+.content-card a {
+    padding-top: 4em;
+}
+
+.arrow-card-right {
+    background-color: var(--mainTextColor);
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    color: var(--mainWhite);
+}
+.arrow-card-right:hover,.arrow-card-left:hover{
+    opacity: 0.5;
+}
+
+.arrow-card-left {
+    background-color: var(--mainTextColor);
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    color: var(--mainWhite);
+}
+
+.all-cards p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+}
+
+
+@media screen and (max-width:900px){
+    .cards{
+        margin-top: 0.5em;
+    }
+    .caption-card span{
+        margin-right: 2.3em;
+    }
+    .card2,.card3{
+        display: none;
+    }
+    .card1{
+        width: 90%;
+        position: relative;
+    }
+
+    .arrow-card-right {
+        right: 2%;
+        top: 25%;
+    }
+    .arrow-card-left {
+        left: 2%;
+        top: 25%;
+    }
+
+}
