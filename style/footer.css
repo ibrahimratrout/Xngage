@@ -1,0 +1,258 @@
+footer {
+    background-color: var(--mainTextColor);
+}
+
+.contain-footer {
+    display: flex;
+    border-bottom: 1px solid var(--mainWhite);
+    padding-bottom: 1em;
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 1em 1em;
+}
+
+.logo-footer a {
+    color: var(--mainWhite);
+}
+
+.logo-footer img {
+    margin-bottom: 1em;
+}
+
+.logo-footer address {
+    font-style: normal;
+    font-size: 0.8em;
+    color: var(--mainWhite);
+    margin: 1em 0;
+}
+
+.href-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0.8em 0;
+    gap: 1.5em;
+}
+
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    padding: 1em;
+}
+
+.col-footer {
+    width: 25%;
+}
+
+.col-footer h4 {
+    padding-left: 0.3em;
+    padding-bottom: 0.9em;
+    color: var(--mainWhite);
+    text-transform: capitalize;
+    position: relative;
+    display: inline-block;
+}
+
+
+.col-footer h4::before {
+    content: "";
+    position: absolute;
+    bottom: 25%;
+    left: 7%;
+    width: 35%;
+    border-bottom: 1px solid var(--mainWhite);
+}
+
+.contain-footer li a {
+    color: var(--mainWhite);
+    text-transform: capitalize;
+}
+
+.col-footer li {
+    padding: 0.3em;
+
+}
+
+.social-footer {
+    padding: 1em 0;
+    gap: 15px;
+}
+
+.social-footer a {
+    padding: 0.3em 0.4em;
+    background-color: var(--mainWhite);
+    border-radius: 0.2em;
+    margin: 0.5em 0.2em;
+}
+
+.social-footer i {
+    color: var(--mainTextColor);
+}
+
+.policy-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    color: var(--mainWhite);
+    font-size: 0.8em;
+    gap: 1em;
+}
+
+.right-policy {
+    display: flex;
+    gap: 1em;
+}
+
+.policy-border {
+    border-right: 1px solid var(--mainWhite);
+    padding-right: 10px;
+}
+
+
+.col-footer label {
+    display: none;
+}
+
+.social-footer-mobile{
+    display: none;
+}
+
+@media screen and (max-width:900px) {
+    .contain-footer {
+        flex-direction: column;
+        border-bottom: 0;
+    }
+
+    .logo-footer {
+        width: 100%;
+    }
+
+    .href-footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .social-footer {
+        display: none;
+    }
+
+    .row-footer {
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        
+    }
+
+    .col-footer {
+        width: 100%;
+        border-bottom: 2px solid var(--mainWhite);
+    }
+
+    .col-footer h4 {
+        padding: 1em 0;
+        width: 100%;
+    }
+
+    .col-footer label {
+        display: block;
+    }
+    .col-footer .company-heading{
+        border-top: 2px solid var(--mainWhite);
+    }
+
+    .col-footer h4::before {
+        border-bottom: 0;
+    }
+
+    .company-heading,
+    .solution-heading,
+    .product-heading,
+    .connect-heading {
+        display: flex;
+        justify-content: flex-end;
+        background-color: var(--mainTextColor);
+    }
+
+    .company-heading h4,
+    .solution-heading h4,
+    .product-heading h4,
+    .connect-heading h4 {
+        background-color: var(--mainTextColor);
+        font-size: 1.3em;
+        padding: 1em 0.8em;
+    }
+
+    .company-heading label,
+    .solution-heading label,
+    .product-heading label,
+    .connect-heading label {
+        display: inline-block;
+        padding: 1em;
+        color: var(--mainWhite);
+    }
+    
+    
+    .li-footer-company,
+    .li-footer-solution,
+    .li-footer-products,
+    .li-footer-connect {
+        display: none;
+    }
+
+    input[type="checkbox"]:checked+.li-footer-company,
+    input[type="checkbox"]:checked+.li-footer-solution,
+    input[type="checkbox"]:checked+.li-footer-products,
+    input[type="checkbox"]:checked+.li-footer-connect {
+        display: block;
+
+    }
+
+    .li-footer-company,
+    .li-footer-solution,
+    .li-footer-products,
+    .li-footer-connect{
+        padding: 0.2em 2em;
+    }
+    .li-footer-company li,
+    .li-footer-solution li,
+    .li-footer-products li,
+    .li-footer-connect li{
+        padding: 0.5em 0;
+    }
+
+
+
+    .social-footer-mobile{
+        display: inline-block;
+    }
+
+    .social-footer-mobile {
+        padding: 1.5em 0;
+        margin: 0 1em;
+    }
+    
+    .social-footer-mobile a {
+        padding: 0.7em 0.6em;
+        background-color: var(--mainWhite);
+        border-radius: 0.2em;
+        margin: 0.5em 0.2em;
+    }
+    
+    .social-footer-mobile i {
+        color: var(--mainTextColor);
+        font-size: 1.5em;
+    }
+
+    .policy-footer{
+        flex-direction: column-reverse;
+        margin-left: 1.2em;
+    }
+  
+
+
+}
