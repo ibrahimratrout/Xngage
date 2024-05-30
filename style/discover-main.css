@@ -1,0 +1,85 @@
+.discover-main{
+    margin: 3em 0;
+}
+.discover-main h2{
+    text-align: center;
+    font-size: 2em;
+}
+
+.contain-discover{
+    display: flex; 
+    display: flex;
+    margin: 2em 0; 
+    gap: 3%; 
+    color: var(--mainWhite);
+}
+
+.left-wall{
+    max-width: 50%; 
+    display: flex; 
+    background-color: var(--recentCardColor2);
+}
+.left-wall-img{
+    width: 50%; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.left-wall-content{
+    width: 50%; 
+    padding: 2em;
+}
+.left-wall-content h4{
+    margin-bottom: 3em;
+}
+.left-wall-content h3{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.left-wall-content a{
+    color: var(--mainWhite);
+    
+}
+
+
+.right-wall{
+    max-width: 50%; 
+    display: flex; 
+    background-color: var(--recentCardColor1);
+}
+.right-wall-img{
+    width: 50%; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.right-wall-content{
+    width: 50%; 
+    padding: 2em;
+}
+
+.right-wall-content h4{
+    margin-bottom: 3em;
+}
+.right-wall-content h3{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+.right-wall-content a{
+    color: var(--mainWhite);
+    
+}
+
+
+
+@media screen and (max-width:900px){
+    .contain-discover{
+        flex-direction: column;
+        gap: 2em;
+    }
+    .left-wall{
+        min-width: 100%;
+    }
+    .right-wall{
+        min-width: 100%;
+    }
+}
+
