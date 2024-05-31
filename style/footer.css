@@ -17,7 +17,13 @@ footer {
 
 .logo-footer a {
     color: var(--mainWhite);
+    
 }
+
+.logo-footer a:hover{
+    color: var(--notiBackground);
+}
+
 
 .logo-footer img {
     margin-bottom: 1em;
@@ -33,8 +39,11 @@ footer {
 .href-footer {
     display: flex;
     flex-direction: column;
-    margin: 0.8em 0;
-    gap: 1.5em;
+    margin: 1.5em 0;
+    gap: 1.8em;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-wrap: nowrap;
 }
 
 
@@ -45,11 +54,13 @@ footer {
     padding: 1em;
 }
 
+
 .col-footer {
     width: 25%;
 }
 
 .col-footer h4 {
+    font-size: 0.9em;
     padding-left: 0.3em;
     padding-bottom: 0.9em;
     color: var(--mainWhite);
@@ -65,12 +76,17 @@ footer {
     bottom: 25%;
     left: 7%;
     width: 35%;
-    border-bottom: 1px solid var(--mainWhite);
+    border-bottom: 2px solid var(--mainWhite);
 }
 
 .contain-footer li a {
     color: var(--mainWhite);
     text-transform: capitalize;
+    font-size: 0.8em;
+}
+
+.row-footer li a:hover {
+    color: var(--notiBackground);
 }
 
 .col-footer li {
@@ -81,6 +97,7 @@ footer {
 .social-footer {
     padding: 1em 0;
     gap: 15px;
+    text-wrap: nowrap;
 }
 
 .social-footer a {
@@ -88,6 +105,10 @@ footer {
     background-color: var(--mainWhite);
     border-radius: 0.2em;
     margin: 0.5em 0.2em;
+}
+.social-footer a:hover {
+    padding: 0.5em 0.5em;
+    
 }
 
 .social-footer i {
@@ -114,16 +135,18 @@ footer {
 }
 
 
-.col-footer label {
+.col-footer label,.social-footer-mobile {
     display: none;
 }
 
-.social-footer-mobile{
-    display: none;
-}
 
 @media screen and (max-width:900px) {
+    .container{
+        padding: 10px 0;
+    }
+    
     .contain-footer {
+        margin-top: 1.5em;
         flex-direction: column;
         border-bottom: 0;
     }
@@ -135,6 +158,9 @@ footer {
     .href-footer {
         flex-direction: row;
         justify-content: space-between;
+        font-size: 1.1em;
+        font-weight: 500;
+
     }
 
     .social-footer {
@@ -156,6 +182,7 @@ footer {
     .col-footer h4 {
         padding: 1em 0;
         width: 100%;
+        /* font-size: 0.9em; */
     }
 
     .col-footer label {
@@ -176,6 +203,8 @@ footer {
         display: flex;
         justify-content: flex-end;
         background-color: var(--mainTextColor);
+        font-size: 0.9em;
+
     }
 
     .company-heading h4,
@@ -194,6 +223,7 @@ footer {
         display: inline-block;
         padding: 1em;
         color: var(--mainWhite);
+        margin-top: 0.35em;
     }
     
     
@@ -216,13 +246,13 @@ footer {
     .li-footer-solution,
     .li-footer-products,
     .li-footer-connect{
-        padding: 0.2em 2em;
+        padding: 0.2em 2em 1em;
     }
     .li-footer-company li,
     .li-footer-solution li,
     .li-footer-products li,
     .li-footer-connect li{
-        padding: 0.5em 0;
+        padding: 0 0 1em;
     }
 
 
@@ -233,14 +263,15 @@ footer {
 
     .social-footer-mobile {
         padding: 1.5em 0;
-        margin: 0 1em;
+        /* margin: 0 1em; */
     }
     
+    
     .social-footer-mobile a {
-        padding: 0.7em 0.6em;
+        padding: 0.9em 0.6em 0.75em;
         background-color: var(--mainWhite);
         border-radius: 0.2em;
-        margin: 0.5em 0.2em;
+        margin: 0.5em 1.2em;
     }
     
     .social-footer-mobile i {
@@ -250,7 +281,10 @@ footer {
 
     .policy-footer{
         flex-direction: column-reverse;
+        gap: 2.2em;
+        margin-top: 1.5em;
         margin-left: 1.2em;
+        margin-bottom: 2em;
     }
   
 
