@@ -1,6 +1,6 @@
 /* cards design */
 .cards{
-    margin-top: 2.5em;
+    margin-top: 2em;
 }
 .caption-card h2{
     text-transform: capitalize;
@@ -10,7 +10,7 @@
 .caption-card span{
     display: flex;
     justify-content: flex-end;
-    margin-right: 2em;
+    margin-right: 2.4%;
     color: var(--solutionSpanColor);
 }
 .caption-card span a{
@@ -64,7 +64,7 @@
     align-items: center;
     border-radius: 50%;
     position: absolute;
-    right: 0;
+    right: 0.5%;
     top: 25%;
     color: var(--mainWhite);
 }
@@ -81,7 +81,7 @@
     align-items: center;
     border-radius: 50%;
     position: absolute;
-    left: 0;
+    left: 0.5%;
     top: 25%;
     color: var(--mainWhite);
 }
@@ -95,12 +95,12 @@
 }
 
 
-@media screen and (max-width:900px){
+@media screen and (min-width:601px) and (max-width:950px){
     .cards{
         margin-top: 0.5em;
     }
     .caption-card span{
-        margin-right: 2.3em;
+        margin-right: 5%;
     }
     .card2,.card3{
         display: none;
@@ -119,4 +119,35 @@
         top: 25%;
     }
 
+}
+
+
+
+@media screen and (max-width:600px){
+    .all-cards {
+        margin-top: 0.5em;
+    }
+    .cards{
+        margin-top: 0.5em;
+    }
+    .caption-card span{
+        margin-right: 5%;
+        margin-top: 3%;
+    }
+    .card2,.card3{
+        display: none;
+    }
+    .card1{
+        width: 90%;
+        position: relative;
+    }
+
+    .arrow-card-right {
+        right: 0;
+        top: 20%;
+    }
+    .arrow-card-left {
+        left: 0;
+        top: 20%;
+    }
 }
