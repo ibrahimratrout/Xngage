@@ -104,6 +104,7 @@
 @media screen and (max-width:950px){
     .rental {
         flex-direction: column-reverse;
+        margin: 0 1em;
     }
     .rental img {
         width: 100%;
@@ -111,6 +112,8 @@
     }
     .custom {
         flex-direction: column;
+        margin: 0 1em;
+
     }
     .custom img {
         width: 100%;
