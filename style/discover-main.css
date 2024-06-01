@@ -1,5 +1,5 @@
 .discover-main{
-    margin: 3em 0;
+    margin: 2em 0;
 }
 .discover-main h2{
     text-align: center;
@@ -7,7 +7,6 @@
 }
 
 .contain-discover{
-    display: flex; 
     display: flex;
     margin: 2em 0; 
     gap: 3%; 
@@ -29,14 +28,20 @@
     padding: 2em;
 }
 .left-wall-content h4{
-    margin-bottom: 3em;
+    margin-bottom: 4em;
+    font-weight: 100;
 }
 .left-wall-content h3{
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-bottom: 1em;
+}
+.left-wall-content p{
+    font-size: 0.85em;
+    font-weight: 300;
 }
 .left-wall-content a{
     color: var(--mainWhite);
+    margin-top: 1.5em;
     
 }
 
@@ -57,20 +62,26 @@
 }
 
 .right-wall-content h4{
-    margin-bottom: 3em;
+    margin-bottom: 4em;
+    font-weight: 100;
 }
 .right-wall-content h3{
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-bottom: 1em;
+}
+.right-wall-content p{
+    font-size: 0.85em;
+    font-weight: 300;
 }
 .right-wall-content a{
     color: var(--mainWhite);
+    margin-top: 1.5em;
     
 }
 
 
 
-@media screen and (max-width:900px){
+@media screen and (min-width:601px) and (max-width:900px){
     .contain-discover{
         flex-direction: column;
         gap: 2em;
@@ -82,4 +93,69 @@
         min-width: 100%;
     }
 }
+
+
+@media screen and (max-width:600px){
+    .contain-discover{
+        flex-direction: column;
+        gap: 2em;
+    }
+    .left-wall{
+        flex-direction: column;
+        min-width: 100%;
+    }
+    .left-wall-img{
+        width: 100%;
+        height: 200px;
+    }
+    .left-wall-content{
+        padding: 1em;
+        width: 100%;
+    }
+    .left-wall-content h4{
+        margin-bottom: 2em;
+    }
+    .right-wall{
+        flex-direction: column;
+        min-width: 100%;
+    }
+    .right-wall-img{
+        width: 100%;
+        height: 200px;
+    }
+    .right-wall-content{
+        padding: 1em;
+        width: 100%;
+    }
+    .right-wall-content h4{
+        margin-bottom: 2em;
+    }
+    
+    
+    /* .contain-discover{
+        flex-direction: column;
+        gap: 2em;
+    }
+    .left-wall{
+        flex-direction: column;
+        width: 100%;
+    }
+    .left-wall-img{
+        min-width: 100%;
+        max-height: 50%;
+    }
+    .left-wall-content{
+        min-width: 100%;
+        height: 50%;
+    } */
+
+    /* .left-wall{
+        min-width: 100%;
+    }
+    .right-wall{
+        min-width: 100%;
+    } */
+}
+
+
 
