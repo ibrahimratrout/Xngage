@@ -1,19 +1,18 @@
 /* The fourth section */
 .solution{
-    padding-top: 2em;
+    margin-top: 2em;
 }
 
 .solution h2 {
     text-align: center;
     font-size: 1.8em;
 }
+
 .rental{
     display: flex;
     padding: 1.8em 0 0.7em;
-}
-
-.rental .rental-img {
-    margin-right: 1.5em;
+    gap: 1.5em;
+    margin: 0 1.8em 1.2em;
 }
 
 .rental img {
@@ -23,13 +22,15 @@
 }
 
 .rental .rental-content {
-    padding: 3.9em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2em;
 }
 
 .rental-content span {
     color: var(--solutionSpanColor);
     display: inline-block;
-    margin-bottom: 1.5em;
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -42,87 +43,78 @@
 .half-border::before{
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -0.3em;
     left: 0;
-    width: 35%;
+    width: 2em;
     border-bottom: 2px solid var(--solutionSpanColor);
 }
 
 .rental-content h3 {
     font-size: 1.5em;
-    margin-bottom: 0.7em;
 }
 
 .rental-content a {
     font-weight: 600;
     color: var(--mainTextColor);
     display: inline-block;
-    margin-top: 1.5em;
 }
 
 .custom {
     display: flex;
+    padding: 0 0 0.7em;
+    gap: 1.5em;
+    margin: 0 1.8em;
 }
 
 .custom-content{
-    padding: 3.8em 1.9em;
-}
-
-.custom .custom-img {
-    margin-left: 1.3em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5em;
 }
 
 .custom img {
     display: inline-block;
     width: 40em;
-    height: inherit;
+    height: auto;
 }
 
 .custom-content span {
     color: var(--solutionSpanColor);
     display: inline-block;
-    margin-bottom: 1.3em;
     text-transform: uppercase;
     font-weight: 500;
 }
 
 .custom-content h3 {
     font-size: 1.5em;
-    margin-bottom: 0.6em;
 }
 
 .custom-content a {
     font-weight: 600;
     color: var(--mainTextColor);
     display: inline-block;
-    margin-top: 1.8em;
 }
 
+
+
+
+
 /* How the section react in responsive */
-@media screen and (max-width:900px){
+@media screen and (max-width:950px){
     .rental {
         flex-direction: column-reverse;
-        padding: 1em;
-    }
-    .rental .rental-img {
-        margin-right: 0;
     }
     .rental img {
         width: 100%;
         margin-right: 0;
     }
-    .rental .rental-content {
-        padding: 1em 2em;
-    }
     .custom {
         flex-direction: column;
-        padding: 1em;
-    }
-    .custom-content{
-        padding: 1em 2em;
     }
     .custom img {
         width: 100%;
+
     }
     .custom .custom-img {
         margin-left: 0;
