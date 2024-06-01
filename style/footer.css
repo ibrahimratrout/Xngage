@@ -141,7 +141,7 @@ footer {
 
 
 @media screen and (max-width:900px) {
-    .container{
+    footer .container{
         padding: 10px 0;
     }
     
@@ -182,7 +182,6 @@ footer {
     .col-footer h4 {
         padding: 1em 0;
         width: 100%;
-        /* font-size: 0.9em; */
     }
 
     .col-footer label {
@@ -263,7 +262,6 @@ footer {
 
     .social-footer-mobile {
         padding: 1.5em 0;
-        /* margin: 0 1em; */
     }
     
     
