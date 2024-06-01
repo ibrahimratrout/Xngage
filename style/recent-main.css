@@ -1,137 +1,163 @@
-.recent-main{
-    margin: 2em 0;
+.recent-main {
+  margin: 2em 0;
 }
-.recent-main h2{
-    margin: 1.5em 0;
-    text-align: center;
-    text-transform: capitalize;
+
+.recent-main h2 {
+  margin: 0 0 1.5em;
+  text-align: center;
+  text-transform: capitalize;
 }
-.card-recent{
-    display: flex;
-    position: relative;
-    
+
+.card-recent {
+  display: flex;
+  position: relative;
+
 }
+
 .arrow-card-right-recent {
-    background-color: var(--mainTextColor);
-    width: 3em;
-    height: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    position: absolute;
-    right: -1%;
-    top: 50%;
-    color: var(--mainWhite);
+  background-color: var(--mainTextColor);
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  right: -1%;
+  top: 50%;
+  color: var(--mainWhite);
 }
 
 .arrow-card-left-recent {
-    background-color: var(--mainTextColor);
-    width: 3em;
-    height: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    position: absolute;
-    left: -1%;
-    top: 50%;
-    color: var(--mainWhite);
+  background-color: var(--mainTextColor);
+  width: 3em;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: absolute;
+  left: -1%;
+  top: 50%;
+  color: var(--mainWhite);
 }
 
-.arrow-card-right-recent:hover,.arrow-card-left-recent:hover{
-    opacity: 0.5;
+.arrow-card-right-recent:hover,
+.arrow-card-left-recent:hover {
+  opacity: 0.5;
 }
 
 .card {
-    border: 1px solid var(--notiBackground);
-    width: 23%;
-    margin: auto;
-    background-color: var(--mainWhite);    
-  }
-  .card h4 {
-    color: var(--mainTextColor);
-  }
-  .card img {
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    width: 100%;
-  }
+  border: 1px solid var(--notiBackground);
+  width: 23%;
+  margin: auto;
+  background-color: var(--mainWhite);
+}
 
-  .img-recent{
-    position: relative;
-  }
-  .content-recent-card{
-    width: 80%;
-    margin: 10%;
-  }
+.card h4 {
+  color: var(--mainTextColor);
+}
 
-  .content-recent-card h4{
-    margin-bottom: 1.5em;
-  }
-  .price {
-    color: var(--mainTextColor);
-    font-size: 0.8em;
-    margin-bottom: 8%;
-  }
-  
-  .cardButton {
-    border: none;
-    outline: 0;
-    padding: 0.7em;
-    color: var(--mainWhite);
-    background-color: var(--mainTextColor);
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 0.8em;
-    text-transform:uppercase
-  }
-  
-  .card button:hover {
-    opacity: 0.8;
-  }
+.card img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  width: 100%;
+}
 
- 
-  .donotcross {
-    left: 0;
-    top: 0.8em;
-    position: absolute;
-    padding: 0.6em;
-    margin: 0;
-    width: 100%;
-    background-image: -webkit-linear-gradient(130deg, #ffffff00 35%, rgb(212,223,229) 35%);
-  }
+.img-recent {
+  position: relative;
+}
+
+.content-recent-card {
+  width: 80%;
+  margin: 10%;
+}
+
+.content-recent-card h4 {
+  margin-bottom: 1.5em;
+}
+
+.price {
+  color: var(--mainTextColor);
+  font-size: 0.8em;
+  margin-bottom: 8%;
+}
+
+.cardButton {
+  border: none;
+  outline: 0;
+  padding: 0.7em;
+  color: var(--mainWhite);
+  background-color: var(--mainTextColor);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 0.8em;
+  text-transform: uppercase
+}
+
+.card button:hover {
+  opacity: 0.8;
+}
 
 
-  @media screen and (min-width:601px)  and (max-width:900px){
-    .card2,.card3{
-        display: none;
-    }
-    .card{
-        width: 40%;
-    }
-    .arrow-card-right-recent{
-        right: 2%;
-    }
-    .arrow-card-left-recent{
-        left: 2%;
-    }
+.donotcross {
+  left: 0;
+  top: 0.8em;
+  position: absolute;
+  padding: 0.6em;
+  margin: 0;
+  width: 100%;
+  background-image: -webkit-linear-gradient(130deg, #ffffff00 35%, rgb(212, 223, 229) 35%);
+}
 
+
+@media screen and (min-width:601px) and (max-width:900px) {
+  .recent-main {
+    margin-top: 1em;
   }
 
-@media screen and (max-width:600px){
-    .card2,.card3,.card4{
-        display: none;
-    }
-    .card{
-        width: 60%;
-    }
-    .arrow-card-right-recent{
-        right: 15%;
-    }
-    .arrow-card-left-recent{
-        left: 15%;
-    }
-    
+  .card2,
+  .card3 {
+    display: none;
   }
+
+  .card {
+    width: 40%;
+  }
+
+  .arrow-card-right-recent {
+    right: 2%;
+  }
+
+  .arrow-card-left-recent {
+    left: 2%;
+  }
+
+}
+
+@media screen and (max-width:600px) {
+
+  .recent-main {
+    margin-top: 1em;
+  }
+
+  .card2,
+  .card3,
+  .card4 {
+    display: none;
+  }
+
+  .card {
+    width: 60%;
+  }
+
+  .arrow-card-right-recent {
+    right: 15%;
+  }
+
+  .arrow-card-left-recent {
+    left: 15%;
+  }
+
+}
