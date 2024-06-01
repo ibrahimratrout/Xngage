@@ -3,6 +3,7 @@ footer {
 }
 
 .contain-footer {
+    margin-top: 1em;
     display: flex;
     border-bottom: 1px solid var(--mainWhite);
     padding-bottom: 1em;
