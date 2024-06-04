@@ -16,35 +16,32 @@
 
 <body>
     <!--Main header for website-->
+    <div class="notification-bar">
+        <div class="container">
+            <p>Cleaver-Brooks ClearFire&reg;-CE Condensing Boiler Named Most Valuable Product of the Year by
+                Industry Professionals. <a href="#">learn more <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                </a></p>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="container">
+            <div class="rep">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                <a href="#">
+                    <p>Find a Rep</p>
+                </a>
+            </div>
+            <div class="parts">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <a href="#">
+                    <p>Parts Store</p>
+                </a>
+            </div>
+        </div>
+    </div>
     <header>
         <!--First div in header that contain notification-->
-        <div class="notification-bar">
-            <div class="container">
-                <p>Cleaver-Brooks ClearFire&reg;-CE Condensing Boiler Named Most Valuable Product of the Year by
-                    Industry Professionals. <a href="#">learn more <i class="fa fa-long-arrow-right"
-                            aria-hidden="true"></i>
-                    </a></p>
-            </div>
-        </div>
         <!--The second div about contact, and its clickable-->
-        <div class="contact">
-            <div class="container">
-                <div class="rep">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <a href="#">
-                        <p>Find a Rep</p>
-                    </a>
-                </div>
-                <div class="parts">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <a href="#">
-                        <p>Parts Store</p>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-
         <!--The last div is the main navigation-->
         <nav>
             <div class="container">
@@ -56,10 +53,12 @@
                     </svg>
                 </label>
                 <label id="overlay" for="sidebar-active"></label>
-                <a href="#" class="logo">
+                <!-- <a href="#" class="logo">
                     <img src="assets/XNGAGE-logo.png" alt="XNGAGE" width="160px">
-                </a>
-
+                </a> -->
+                <div class="logo">
+                    <img src="assets/XNGAGE-logo.png" alt="XNGAGE" width="160px">
+                </div>
                 <ul class="menu">
                     <div class="menu-header">
                         <label for="sidebar-active" class="close-sidebar">
@@ -71,21 +70,28 @@
                         </label>
                     </div>
 
-                    <li><a href="#">solution <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                    <li><a href="#"><span class="half-border-li">solution </span><i class="fa fa-angle-right fa-2x"
+                                aria-hidden="true"></i>
                         </a></li>
-                    <li class="products"><a href="#">products <i class="fa fa-angle-right fa-2x"
-                                aria-hidden="true"></i></a>
+                    <li class="products"><a href="#"><span class="half-border-li">products</span><label for="pro-btn"><i
+                                    class="fa fa-angle-right fa-2x" aria-hidden="true"></i></label> </a>
+                        <input type="checkbox" id="pro-btn">
+                        <!-- <label for="pro-btn"><i class="fa fa-angle-right fa-2x"
+                                    aria-hidden="true"></i></label> -->
                         <!-- <input type="checkbox" id="showMega">
                         <label for="showMega" class="mobile-item">Mega Menu</label> -->
                         <div class="mega-box">
                             <div class="container">
                                 <div class="sub1-menu" id="s1">
+                                    <label for="pro-btn" class="icon-label-mobile"><i class="fa fa-angle-left " aria-hidden="true"></i>return to
+                                        menu</label>
+
                                     <ul>
                                         <li class="boilers"><a href="#">boilers <i class="fa fa-long-arrow-right"
                                                     aria-hidden="true"></i> </a>
                                             <div class="sub2-menu" id="s2">
                                                 <ul>
-                                                    <li class="firetube"><a href="#">firetube<i
+                                                    <li class="firetube"><a href="#">firetube <i
                                                                 class="fa fa-long-arrow-right"
                                                                 aria-hidden="true"></i></a>
                                                         <div class="sub3-menu" id="s3">
@@ -132,7 +138,7 @@
                                     <h2>Looking for more information?</h2>
                                     <img src="./assets/boiler.jpg.png" alt="img-boiler" />
 
-                                    <a href="#">Find a Rep Near You<i class="fa fa-long-arrow-right"
+                                    <a href="#">Find a Rep Near You <i class="fa fa-long-arrow-right"
                                             aria-hidden="true"></i></a>
                                 </div>
                             </div>
@@ -140,11 +146,15 @@
                         </div>
 
                     </li>
-                    <li><a href="#">rentals <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="#">industries <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a href="#">education & training <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
+                    <li><a href="#"><span class="half-border-li">rentals </span><i class="fa fa-angle-right fa-2x"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="#"><span class="half-border-li">industries</span> <i class="fa fa-angle-right fa-2x"
+                                aria-hidden="true"></i></a></li>
+                    <li><a href="#"><span class="half-border-li">education & training</span> <i
+                                class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a>
                     </li>
-                    <li><a href="#">company info <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><span class="half-border-li">company info </span><i class="fa fa-angle-right fa-2x"
+                                aria-hidden="true"></i></a></li>
                     <div class="connect-rep-part">
                         <div class="rep-menu">
                             <a href="#">
@@ -165,7 +175,7 @@
 
                 <div class="search">
                     <a href="#">
-                        <p>Search</p>
+                        <p><span class="half-border-li">Search</span></p>
                     </a>
                     <label class="search-mobile">
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"

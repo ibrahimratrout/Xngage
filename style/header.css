@@ -1,10 +1,15 @@
 /* Header for the website /////////////*/
 /* First component in the header */
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
 .notification-bar {
     background-color: var(--notiBackground);
     text-align: center;
-    font-family: "Roboto", sans-serif;
     font-size: 14px;
 }
 
@@ -32,7 +37,6 @@
     display: inline-block;
     font-size: 0.8em;
     font-weight: 600;
-    font-family: "Roboto", sans-serif;
     color: var(--mainTextColor);
 }
 
@@ -46,6 +50,7 @@
 nav {
     box-shadow: 0 -1px 6px rgba(0, 49, 80, 0.15);
     border-bottom: 6px solid var(--mainRed);
+    background-color: var(--mainWhite);
     position: relative;
 }
 
@@ -54,11 +59,36 @@ nav>div {
     justify-content: space-around;
 }
 
-nav ul {
+/* make half border on hover */
+.half-border-li{
+    position: relative;
+}
+.half-border-li::before {
+    content: "";
+    position: absolute;
+    bottom: -0.6em;
+    left: 10%;
+    width: 1.5em;
+    border-bottom: 2px solid var(--mainTextColor);
+    opacity: 0;
+    transition: opacity 0.3s;
+
+}
+.menu>li>a:hover .half-border-li::before {
+    opacity: 1;
+}
+
+.search:hover .half-border-li::before {
+    opacity: 1;
+}
+
+nav .menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-top: 1%;
+    /* background-color: red; */
+    /* background-color: #f9f8f6; */
 }
 
 .logo {
@@ -66,14 +96,23 @@ nav ul {
     align-items: center;
 }
 
-.menu li a {
-    margin: 5px;
-    padding: 0px 16px;
+
+.menu>li>a {
+    margin: 5px 15px;
+    padding: 32px 5px;
     text-transform: uppercase;
-    font-weight: bold;
-    font-family: "Roboto", sans-serif;
+    /* font-weight: bold; */
+    font-weight: 600;
+    /* font-size: 0.8em; */
+    font-size: 1em;
     color: var(--mainTextColor);
-    display: flex;
+    /* background-color: red; */
+    
+}
+
+
+#pro-btn,.products label {
+    display: none;
 }
 
 
@@ -89,15 +128,11 @@ nav ul {
 
 
 /* menu mega  */
-nav li:hover,
-nav .search:hover {
-    border-bottom: 2px solid var(--mainTextColor);
-}
 
-.mobile-item,
+/* .mobile-item,
 #showMega {
     display: none;
-}
+} */
 
 .products:hover .mega-box {
     transition: all 1s ease;
@@ -113,7 +148,6 @@ nav .search:hover {
     position: absolute;
     top: calc(100% + 6px);
     left: 0;
-    /* background-color: white; */
     width: 100%;
     height: 460px;
     z-index: 100;
@@ -127,7 +161,7 @@ nav .search:hover {
 
 .sub1-menu {
     position: absolute;
-    padding: 2% 2%;
+    padding: 2.5% 4%;
     height: 470px;
     border: none;
     border-left: 1px solid var(--notiBackground);
@@ -139,7 +173,7 @@ nav .search:hover {
 
 .sub2-menu {
     position: absolute;
-    padding: 3% 1%;
+    padding: 3.5% 3%;
     height: 470px;
     border: none;
     border-left: 1px solid var(--notiBackground);
@@ -153,7 +187,7 @@ nav .search:hover {
 
 .sub3-menu {
     position: absolute;
-    padding: 5% 2%;
+    padding: 5.5% 4%;
     height: 470px;
     border: none;
     border-left: 1px solid var(--notiBackground);
@@ -173,10 +207,15 @@ nav .search:hover {
 .mega-box ul li {
     padding: 3px 0px;
     border: 0;
+    margin: 0.3em 0;
 }
 
 .mega-box ul li a {
     text-transform: capitalize;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: var(--mainTextColor);
+
 }
 
 .mega-box ul li:hover>a {
@@ -196,7 +235,7 @@ nav .search:hover {
 .mega-box .img-menu h2 {
     font-size: 30px;
     font-weight: 600;
-    font-family: "Roboto", sans-serif;
+    /* font-family: "Roboto", sans-serif; */
     color: var(--mainTextColor);
     text-transform: none;
     padding: 28px;
@@ -204,9 +243,9 @@ nav .search:hover {
 
 .mega-box .img-menu a {
     color: var(--hoverTextMega);
-    padding-top: 10px;
+    padding-top: 2.5em;
     text-transform: none;
-    padding-left: 25px;
+    padding-left: 2em;
 }
 
 .mega-box img {
@@ -229,15 +268,16 @@ nav .search:hover {
 /* end mega */
 
 .search {
-    font-weight: bold;
-    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 1em;
     color: var(--mainTextColor);
     display: flex;
     align-items: center;
     margin-right: 2%;
+    margin-top: 2px;
     gap: 5px;
     text-transform: uppercase;
-    padding-top: 10px;
+
 }
 
 .search p {
@@ -249,45 +289,112 @@ nav .search:hover {
 }
 
 
+@media screen and (min-width:981px) and (max-width:1240px){
+    .menu>li>a {
+        margin: 5px 5px;
+        padding: 32px 0;
+        font-weight: 600;
+        font-size: 0.9em;
+        color: var(--mainTextColor);
+    }  
+    .search{
+        font-size: 0.9em;
+    }
+}
+
+
 /* How the website react with small devices */
-@media screen and (max-width:800px) {
+@media screen and (max-width:980px) {
+  
+
+    .products label {
+        display: inline-flex;
+    }
+
 
     .contact,
     .search p {
         display: none;
     }
 
-    nav {
-        position: static;
-        height: 100%;
-    }
+   
 
-
-    nav ul {
+    nav .menu {
         display: none;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
-        z-index: 10;
-        background-color: var(--megaColorMobile);
+        z-index: 100;
         width: 85%;
+        height: 100%;
+        padding: 0;
+        flex-wrap: nowrap;
+        overflow: auto;
+        background-color: #f9f8f6;
     }
 
-    nav li {
-        padding: 20px 5px;
+    .menu>li>a {
+        padding: 0;
+    }
+
+  
+    .sub1-menu {
+        width: 100%;
+        height: inherit;
+        /* background-color: blue; */
+    }
+
+  
+    .sub1-menu ul {
+        padding: 20px;
+    }
+
+    .sub1-menu ul li {
+        padding: 9px;
+        /* background-color: yellow; */
+    }
+    .boilers:hover .sub2-menu,
+    .firetube:hover .sub3-menu {
+        display: none;
+        opacity: 0;
+    }
+
+    
+
+    .products {
+        position: relative;
+    }
+
+    .products:hover .mega-box {
+        display: none;
+    }
+
+    .mega-box {
+        display: none;
+        opacity: 0;
+        position: absolute;
+        top: -102.5%;
+    }
+
+   
+    #pro-btn:checked~.mega-box {
+        display: flex;
+        opacity: 1;
+    }
+    
+
+    nav .menu>li {
+        padding: 10px 5px;
         width: 100%;
         border-bottom: 2px solid var(--notiBackground);
         height: auto;
         background-color: white;
     }
 
-    nav li:hover {
-        background-color: var(--hoverColorList);
-        border-bottom: 0px solid transparent;
-    }
+    
 
     .menu i {
         display: inline;
@@ -323,27 +430,7 @@ nav .search:hover {
 
     /* mega on mobile */
 
-    .products:hover .mega-box {
-        display: flex;
-        opacity: 1;
-        position: absolute;
-        top: 100px;
-    }
-
-    .products:hover .sub1-menu {
-        width: 100%;
-    }
-
-    .products:hover .sub1-menu li {
-        padding: 18px 20px;
-        width: 117.3%;
-        height: inherit;
-        background-color: var(--megaColorMobile);
-    }
-
-    .products:hover .sub1-menu li:hover {
-        background-color: cornflowerblue;
-    }
+  
 
     .boilers:hover .sub2-menu,
     .firetube:hover .sub3-menu {
@@ -351,18 +438,13 @@ nav .search:hover {
         opacity: 0;
     }
 
-  
-    .mega-box .img-menu,
-    .mega-box i {
+
+    .mega-box .img-menu {
         display: none;
     }
 
-    .products:hover li.nav {
-        border-bottom: 0 solid transparent;
-    }
 
 
-    
     /* menu header */
 
     .menu-header {
@@ -380,6 +462,7 @@ nav .search:hover {
         padding-top: 4%;
         margin-bottom: 4%;
     }
+
 
     #sidebar-active:checked~ul {
         display: flex;
@@ -417,6 +500,22 @@ nav .search:hover {
         margin-left: 6%;
         margin-bottom: 20%;
     }
+    .boilers i {
+        display: none;
+    }
+
+    .icon-label-mobile {
+        display: flex;
+        align-items: center; 
+        gap: 0.5em; 
+        cursor: pointer;
+        font-size: 1.5em;
+        color: var(--mainTextColor);
+    }
+    .icon-label-mobile:hover {
+        background-color: var(--notiBackground);
+    }
+
 
 
 }
