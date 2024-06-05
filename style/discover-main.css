@@ -82,6 +82,9 @@
 
 
 @media screen and (min-width:601px) and (max-width:900px){
+    .discover-main{
+        margin: 1em 0;
+    }
     .contain-discover{
         flex-direction: column;
         gap: 2em;
@@ -96,6 +99,9 @@
 
 
 @media screen and (max-width:600px){
+    .discover-main{
+        margin: 1em 0;
+    }
     .contain-discover{
         flex-direction: column;
         gap: 2em;

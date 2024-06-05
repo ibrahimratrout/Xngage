@@ -102,6 +102,9 @@
 
 /* How the section react in responsive */
 @media screen and (max-width:950px){
+    .solution{
+        margin-top: 1em;
+    }
     .rental {
         flex-direction: column-reverse;
         margin: 0 1em;
