@@ -294,17 +294,10 @@ nav .menu {
 
 /* How the website react with small devices */
 @media screen and (max-width:980px) {
-    .products label {
-        display: inline-flex;
-    }
-
-
     .contact,
     .search p {
         display: none;
     }
-
-   
 
     nav .menu {
         display: none;
@@ -325,51 +318,6 @@ nav .menu {
 
     .menu>li>a {
         padding: 0;
-    }
-
-  
-    .sub1-menu {
-        width: 100%;
-        height: inherit;
-        /* background-color: blue; */
-    }
-
-  
-    .sub1-menu ul {
-        padding: 20px;
-    }
-
-    .sub1-menu ul li {
-        padding: 9px;
-        /* background-color: yellow; */
-    }
-    .boilers:hover .sub2-menu,
-    .firetube:hover .sub3-menu {
-        display: none;
-        opacity: 0;
-    }
-
-    
-
-    .products {
-        position: relative;
-    }
-
-    .products:hover .mega-box {
-        display: none;
-    }
-
-    .mega-box {
-        display: none;
-        opacity: 0;
-        position: absolute;
-        top: -102.5%;
-    }
-
-   
-    #pro-btn:checked~.mega-box {
-        display: flex;
-        opacity: 1;
     }
     
 
@@ -417,7 +365,41 @@ nav .menu {
 
     /* mega on mobile */
 
-  
+    .sub1-menu {
+        width: 100%;
+        height: inherit;
+    }
+    .sub1-menu ul {
+        padding: 20px;
+    }
+    .sub1-menu ul li {
+        padding: 9px;
+    }
+
+    .products {
+        position: relative;
+    }
+
+    .products:hover .mega-box {
+        display: none;
+    }
+
+    .mega-box {
+        /* display: none;
+        opacity: 0; */
+        position: absolute;
+        top: -102.5%;
+    }
+
+    .products label {
+        display: inline-flex;
+    }
+   
+    #pro-btn:checked~.mega-box {
+        display: flex;
+        opacity: 1;
+    }
+    
 
     .boilers:hover .sub2-menu,
     .firetube:hover .sub3-menu {
@@ -431,14 +413,13 @@ nav .menu {
     }
 
 
-
     /* menu header */
 
     .menu-header {
         display: flex;
         width: 100%;
         border-bottom: 3px solid var(--mainRed);
-        background-color: white;
+        background-color: var(--mainWhite);
     }
 
 
@@ -462,7 +443,7 @@ nav .menu {
         position: fixed;
         top: 0;
         right: 0;
-        z-index: 1;
+        z-index: 7;
     }
 
     nav {
@@ -502,7 +483,5 @@ nav .menu {
     .icon-label-mobile:hover {
         background-color: var(--notiBackground);
     }
-
-
 
 }
