@@ -294,8 +294,6 @@ nav .menu {
 
 /* How the website react with small devices */
 @media screen and (max-width:980px) {
-  
-
     .products label {
         display: inline-flex;
     }
