@@ -51,9 +51,6 @@
     margin-bottom: 1em;
 }
 
-.content-card a {
-    padding-top: 4em;
-}
 
 .arrow-card-right {
     background-color: var(--mainTextColor);
