@@ -1,23 +1,21 @@
 /* The fourth section */
-.solution{
+.solution-main{
     margin-top: 2em;
 }
 
-.solution h2 {
+.solution-main h2 {
     text-align: center;
     font-size: 1.8em;
 }
 
 .rental{
     display: flex;
-    padding: 1.8em 0 0.7em;
     gap: 1.5em;
-    margin: 0 1.8em 1.2em;
+    margin: 1.5em 0;
 }
 
 .rental img {
-    display: inline-block;
-    width: 40em;
+    max-width: 900px;
     height: auto;
 }
 
@@ -58,12 +56,13 @@
     color: var(--mainTextColor);
     align-self: flex-start;
 }
+.rental-content a:hover {
+    opacity: 0.5;
+}
 
 .custom {
     display: flex;
-    padding: 0 0 0.7em;
     gap: 1.5em;
-    margin: 0 1.8em;
 }
 
 .custom-content{
@@ -74,14 +73,12 @@
 }
 
 .custom img {
-    display: inline-block;
-    width: 40em;
+    max-width: 900px;
     height: auto;
 }
 
 .custom-content span {
     color: var(--solutionSpanColor);
-    /* display: inline-block; */
     text-transform: uppercase;
     font-weight: 500;
 }
@@ -95,6 +92,9 @@
     color: var(--mainTextColor);
     align-self: flex-start;
 }
+.custom-content a:hover {
+    opacity: 0.5;
+}
 
 
 
@@ -102,27 +102,20 @@
 
 /* How the section react in responsive */
 @media screen and (max-width:950px){
-    .solution{
+    .solution-main{
         margin-top: 1em;
     }
     .rental {
         flex-direction: column-reverse;
-        margin: 0 1em;
     }
     .rental img {
         width: 100%;
-        margin-right: 0;
     }
     .custom {
         flex-direction: column;
-        margin: 0 1em;
-
     }
     .custom img {
         width: 100%;
 
-    }
-    .custom .custom-img {
-        margin-left: 0;
     }
 }
