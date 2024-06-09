@@ -27,10 +27,10 @@ header {
 }
 
 .contact>div {
-    padding: 10px;
+    padding: 10px 30px;
     display: flex;
     justify-content: flex-end;
-    gap: 1.5%;
+    gap: 3%;
 }
 
 .contact p {
@@ -40,10 +40,10 @@ header {
     color: var(--mainTextColor);
 }
 
-.rep,
+/* .rep,
 .parts {
     margin-right: 4%;
-}
+} */
 
 
 /* third component for the header */
@@ -56,7 +56,8 @@ nav {
 
 nav>div {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: space-between;
 }
 
 /* make half border on hover */
@@ -83,6 +84,7 @@ nav>div {
 }
 
 nav .menu {
+    /* background-color: blue; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -90,10 +92,12 @@ nav .menu {
 }
 
 .logo {
+    /* margin-right: 2em; */
+    margin-right: 40px;
     display: flex;
     align-items: center;
+    /* background-color: red; */
 }
-
 
 .menu>li>a {
     margin: 5px 15px;
@@ -105,7 +109,7 @@ nav .menu {
 }
 
     
-#pro-btn,.products label {
+#product-btn,.products label {
     display: none;
 }
 
@@ -262,7 +266,7 @@ nav .menu {
     color: var(--mainTextColor);
     display: flex;
     align-items: center;
-    margin-right: 2%;
+    /* margin-right: 2%; */
     margin-top: 2px;
     gap: 5px;
     text-transform: uppercase;
@@ -395,7 +399,7 @@ nav .menu {
         display: inline-flex;
     }
    
-    #pro-btn:checked~.mega-box {
+    #product-btn:checked~.mega-box {
         display: flex;
         opacity: 1;
     }
