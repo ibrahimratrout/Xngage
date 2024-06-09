@@ -1,5 +1,5 @@
 /* cards design */
-.cards{
+.cards-news-main{
     margin-top: 2em;
 }
 .caption-card h2{
@@ -10,7 +10,6 @@
 .caption-card span{
     display: flex;
     justify-content: flex-end;
-    margin-right: 2.4%;
     color: var(--solutionSpanColor);
 }
 .caption-card span a{
@@ -20,22 +19,25 @@
     font-size: 0.9em;
 }
 
+
 .all-cards {
     display: flex;
-    justify-content: center;
-    gap: 12px;
+    justify-content: space-between;
     position: relative;
-    margin: 1em 0 1.5em;
+    margin: 1em 0;
 }
 
 
 .card-style {
-    width: 31%;
+    width: 32%;
 }
 .card-style a{
     text-transform: capitalize;
     color:var(--mainTextColor);
     font-weight: 600;
+}
+.card-style a:hover{
+    opacity: 0.5;
 }
 
 .content-card {
@@ -61,7 +63,7 @@
     align-items: center;
     border-radius: 50%;
     position: absolute;
-    right: 0.5%;
+    right: -1.5%;
     top: 25%;
     color: var(--mainWhite);
 }
@@ -78,7 +80,7 @@
     align-items: center;
     border-radius: 50%;
     position: absolute;
-    left: 0.5%;
+    left: -1.5%;
     top: 25%;
     color: var(--mainWhite);
 }
@@ -93,26 +95,32 @@
 
 
 @media screen and (min-width:601px) and (max-width:950px){
-    .cards{
+    .cards-news-main{
         margin-top: 0.5em;
     }
     .caption-card span{
         margin-right: 5%;
     }
-    .card2,.card3{
+    .all-cards{
+        justify-content: space-around;
+    }
+    .card-news-three{
         display: none;
     }
-    .card1{
-        width: 90%;
+    .card-news-one{
+        width: 40%;
         position: relative;
     }
-
+    .card-news-two{
+        width: 40%;
+        position: relative;
+    }
     .arrow-card-right {
-        right: 2%;
+        right: -1.5%;
         top: 25%;
     }
     .arrow-card-left {
-        left: 2%;
+        left: -1.5%;
         top: 25%;
     }
 
@@ -122,29 +130,30 @@
 
 @media screen and (max-width:600px){
     .all-cards {
+        justify-content: center;
         margin-top: 0.5em;
     }
-    .cards{
+    .cards-news-main{
         margin-top: 0.5em;
     }
     .caption-card span{
-        margin-right: 5%;
         margin-top: 3%;
+        justify-content: center;
     }
-    .card2,.card3{
+    .card-news-two,.card-news-three{
         display: none;
     }
-    .card1{
-        width: 90%;
+    .card-news-one{
+        width: 100%;
         position: relative;
     }
 
     .arrow-card-right {
-        right: 0;
+        right: -3%;
         top: 20%;
     }
     .arrow-card-left {
-        left: 0;
+        left: -3%;
         top: 20%;
     }
 }
