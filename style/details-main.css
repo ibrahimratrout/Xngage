@@ -1,14 +1,12 @@
 /* Design for second section */
-.details-main{
-    padding: 2em 2em;
-}
+ .details-main{
+    margin-top: 1.5em;
+ }
 
 .details-main> div{
     display: flex;
     position: relative;
 } 
-
-
 
 .details-main .title-details{
     font-size: 1.1em;
@@ -56,10 +54,6 @@
 
 @media screen and (max-width:900px){
     /* the second section in the main */
-    .details-main{
-        padding: 1em 1em;
-    }
-
     .details-main>div{
         display: inline-block;
     }
