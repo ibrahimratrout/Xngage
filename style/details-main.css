@@ -19,7 +19,7 @@
     border-right: 2px solid var(--notiBackground);
 }
 
-.details-main .info-datails{
+.details-main .information-datails{
     font-size: 1.1em;
     padding-top: 0.6em;
     padding-left: 2em;
@@ -66,7 +66,7 @@
         padding: 20px;
     }
     
-    .details-main .info-datails{
+    .details-main .information-datails{
         font-size: 1em;
         padding-top: 0.7em;
         padding-left: 0;
