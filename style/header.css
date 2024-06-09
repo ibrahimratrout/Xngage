@@ -35,7 +35,8 @@ header {
 
 .contact p {
     display: inline-block;
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
+    font-size: 14px;
     font-weight: 600;
     color: var(--mainTextColor);
 }
@@ -104,7 +105,7 @@ nav .menu {
     padding: 34px 5px;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 1em;
+    /* font-size: 1em; */
     color: var(--mainTextColor);
 }
 
@@ -200,12 +201,14 @@ nav .menu {
 .mega-box ul li {
     padding: 3px 0px;
     border: 0;
-    margin: 0.3em 0;
+    /* margin: 0.3em 0; */
+    margin: 5px 0;
 }
 
 .mega-box ul li a {
     text-transform: capitalize;
-    font-size: 0.9em;
+    /* font-size: 0.9em; */
+    font-size: 14px;
     font-weight: 600;
     color: var(--mainTextColor);
 
@@ -228,7 +231,6 @@ nav .menu {
 .mega-box .img-menu h2 {
     font-size: 30px;
     font-weight: 600;
-    /* font-family: "Roboto", sans-serif; */
     color: var(--mainTextColor);
     text-transform: none;
     padding: 28px;
@@ -236,9 +238,7 @@ nav .menu {
 
 .mega-box .img-menu a {
     color: var(--hoverTextMega);
-    padding-top: 2.5em;
-    text-transform: none;
-    padding-left: 2em;
+    margin-left: 25px;
 }
 
 .mega-box img {
@@ -246,6 +246,7 @@ nav .menu {
     height: 250px;
     object-fit: cover;
     margin-left: 14%;
+    margin-bottom: 20px;
 }
 
 .boilers:hover .sub2-menu,
@@ -262,7 +263,7 @@ nav .menu {
 
 .search {
     font-weight: 700;
-    font-size: 1em;
+    /* font-size: 1em; */
     color: var(--mainTextColor);
     display: flex;
     align-items: center;
@@ -277,9 +278,9 @@ nav .menu {
     color: var(--mainTextColor);
 }
 
-.search-mobile {
+/* .search-mobile {
     margin-top: 3%;
-}
+} */
 
 
 @media screen and (min-width:981px) and (max-width:1240px){
@@ -287,11 +288,13 @@ nav .menu {
         margin: 5px 5px;
         padding: 32px 0;
         font-weight: 600;
-        font-size: 0.9em;
+        /* font-size: 0.9em; */
+        font-size: 14px;
         color: var(--mainTextColor);
     }  
     .search{
-        font-size: 0.9em;
+        /* font-size: 0.9em; */
+        font-size: 14px;
     }
 }
 
@@ -349,7 +352,7 @@ nav .menu {
     .connect-rep-part {
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 20px 14px;
     }
 
     .rep-menu,
@@ -360,9 +363,8 @@ nav .menu {
 
     .connect-rep-part p {
         display: inline;
-        font-size: 1.1em;
+        font-size: 18px;
         font-weight: 600;
-        font-family: "Roboto", sans-serif;
         color: var(--mainTextColor);
     }
 
@@ -389,8 +391,6 @@ nav .menu {
     }
 
     .mega-box {
-        /* display: none;
-        opacity: 0; */
         position: absolute;
         top: -102.5%;
     }
@@ -479,9 +479,9 @@ nav .menu {
     .icon-label-mobile {
         display: flex;
         align-items: center; 
-        gap: 0.5em; 
+        gap: 8px; 
         cursor: pointer;
-        font-size: 1.5em;
+        font-size: 24px;
         color: var(--mainTextColor);
     }
     .icon-label-mobile:hover {
