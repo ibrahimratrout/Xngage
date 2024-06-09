@@ -1,4 +1,4 @@
-.img-cover{
+.image-cover{
     background-image: linear-gradient(to right,rgba(0, 49, 80,0.35),rgba(0,0,0,0.8)),url(../assets/Engineers.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -8,25 +8,20 @@
     align-items: center;
 }
 
-.img-cover:first-child{
-    justify-content: flex-start;
-    padding: 0;
-}
-
-.img-text{
+.image-text{
     text-align: center;
     color:var(--mainWhite);
 }
-.img-text h1{
+.image-text h1{
     font-size: 3.16em;
     font-weight: 700;
 }
 
-.img-text span{
+.image-text span{
     display: block;
 }
 
-.img-text a{
+.image-text a{
     display: inline-block;
     padding: 14px 58px;
     margin: 20px;
@@ -37,17 +32,17 @@
     text-transform: uppercase;
 }
 
-.img-text a:hover{
+.image-text a:hover{
     color: var(--mainTextColor);
     background-color: var(--mainWhite);
 }
 
 /* Menu in responsive way */
 @media screen and (max-width:800px){
-    .img-text span{
+    .image-text span{
         display: inline-block;
     }
-    .img-text h1{
+    .image-text h1{
         font-size: 2.2em;
         font-weight: 600;
         padding: 15px;
