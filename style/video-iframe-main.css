@@ -1,9 +1,6 @@
-/* .content-vid{
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    overflow: hidden;
-} */
+.video-main{
+    margin-top: 1.5em;
+}
 .video-main>div {
     display: flex;
     justify-content: flex-end;
@@ -15,8 +12,8 @@
     width: 30%;
     height: auto;
     left: 0;
-    top: 15%;
-    transform: translateX(10%);
+    top: 19%;
+    transform: translateX(5%);
     position: absolute;
     z-index: 2;
     padding: 3em 1em 3.5em 1.5em;
@@ -35,8 +32,7 @@
 }
 
 .video-iframe {
-    margin-right: 1.8em;
-    width: 70%;
+    width: 75%;
 }
 
 .over-video p {
@@ -50,23 +46,14 @@ iframe {
 
 
 @media screen and (max-width:900px) {
-
     /* third section */
-    /* .content-vid{
-        margin: 0 1em;
-    } */
     .video-main>div {
-        /* margin: 0 1em; */
         flex-direction: column;
     }
 
     .video-iframe {
         width: 100%;
     }
-
-    /* .content-vid {
-        flex-direction: column;
-    } */
 
     iframe {
         width: 100%;
