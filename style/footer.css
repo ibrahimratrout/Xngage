@@ -13,15 +13,14 @@ footer {
     display: flex;
     flex-direction: column;
     width: 20%;
-    padding: 1em 1em;
+    margin: 0.85em 0;
 }
 
 .logo-footer a {
     color: var(--mainWhite);
-    
 }
 
-.logo-footer a:hover{
+.logo-footer a:hover {
     color: var(--notiBackground);
 }
 
@@ -50,17 +49,18 @@ footer {
 
 .row-footer {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: 80%;
-    padding: 1em;
+    padding: 1em 0;
 }
 
 
-.col-footer {
-    width: 25%;
+.column-footer {
+    width: 23%;
 }
 
-.col-footer h4 {
+.column-footer h4 {
     font-size: 0.9em;
     padding-left: 0.3em;
     padding-bottom: 0.9em;
@@ -71,7 +71,7 @@ footer {
 }
 
 
-.col-footer h4::before {
+.column-footer h4::before {
     content: "";
     position: absolute;
     bottom: 25%;
@@ -90,14 +90,14 @@ footer {
     color: var(--notiBackground);
 }
 
-.col-footer li {
+.column-footer li {
     padding: 0.3em;
 
 }
 
 .social-footer {
     padding: 1em 0;
-    gap: 15px;
+    gap: 10px;
     text-wrap: nowrap;
 }
 
@@ -107,8 +107,9 @@ footer {
     border-radius: 0.2em;
     margin: 0.5em 0.2em;
 }
+
 .social-footer a:hover {
-    padding: 0.5em 0.5em; 
+    opacity: 0.5;
 }
 
 .social-footer i {
@@ -135,16 +136,23 @@ footer {
 }
 
 
-.col-footer label,.social-footer-mobile {
+.column-footer label,
+.social-footer-mobile {
     display: none;
 }
 
+#list-company,
+#list-solution ,
+#list-product,
+#list-connect{
+    display: none;
+}
 
 @media screen and (max-width:900px) {
-    footer .container{
+    footer .container {
         padding: 10px 0;
     }
-    
+
     .contain-footer {
         margin-top: 1.5em;
         flex-direction: column;
@@ -153,6 +161,7 @@ footer {
 
     .logo-footer {
         width: 100%;
+        padding: 0 1em;
     }
 
     .href-footer {
@@ -171,27 +180,28 @@ footer {
         width: 100%;
         flex-direction: column;
         padding: 0;
-        
+
     }
 
-    .col-footer {
+    .column-footer {
         width: 100%;
         border-bottom: 2px solid var(--mainWhite);
     }
 
-    .col-footer h4 {
+    .column-footer h4 {
         padding: 1em 0;
         width: 100%;
     }
 
-    .col-footer label {
+    .column-footer label {
         display: block;
     }
-    .col-footer .company-heading{
+
+    .column-footer .company-heading {
         border-top: 2px solid var(--mainWhite);
     }
 
-    .col-footer h4::before {
+    .column-footer h4::before {
         border-bottom: 0;
     }
 
@@ -224,39 +234,40 @@ footer {
         color: var(--mainWhite);
         margin-top: 0.35em;
     }
-    
-    
-    .li-footer-company,
-    .li-footer-solution,
-    .li-footer-products,
-    .li-footer-connect {
+
+
+    .list-footer-company,
+    .list-footer-solution,
+    .list-footer-products,
+    .list-footer-connect {
         display: none;
     }
 
-    input[type="checkbox"]:checked+.li-footer-company,
-    input[type="checkbox"]:checked+.li-footer-solution,
-    input[type="checkbox"]:checked+.li-footer-products,
-    input[type="checkbox"]:checked+.li-footer-connect {
+    input[type="checkbox"]:checked+.list-footer-company,
+    input[type="checkbox"]:checked+.list-footer-solution,
+    input[type="checkbox"]:checked+.list-footer-products,
+    input[type="checkbox"]:checked+.list-footer-connect {
         display: block;
 
     }
 
-    .li-footer-company,
-    .li-footer-solution,
-    .li-footer-products,
-    .li-footer-connect{
+    .list-footer-company,
+    .list-footer-solution,
+    .list-footer-products,
+    .list-footer-connect {
         padding: 0.2em 2em 1em;
     }
-    .li-footer-company li,
-    .li-footer-solution li,
-    .li-footer-products li,
-    .li-footer-connect li{
+
+    .list-footer-company li,
+    .list-footer-solution li,
+    .list-footer-products li,
+    .list-footer-connect li {
         padding: 0 0 1em;
     }
 
 
 
-    .social-footer-mobile{
+    .social-footer-mobile {
         display: flex;
         flex-wrap: wrap;
     }
@@ -264,28 +275,28 @@ footer {
     .social-footer-mobile {
         padding: 1.5em 0;
     }
-    
-    
+
+
     .social-footer-mobile a {
         padding: 0.5em 0.6em 0.75em;
         background-color: var(--mainWhite);
         border-radius: 0.2em;
         margin: 0.5em 1.2em;
     }
-    
+
     .social-footer-mobile i {
         color: var(--mainTextColor);
         font-size: 1.5em;
     }
 
-    .policy-footer{
+    .policy-footer {
         flex-direction: column-reverse;
         gap: 2.2em;
         margin-top: 1.5em;
         margin-left: 1.2em;
         margin-bottom: 2em;
     }
-  
+
 
 
 }
