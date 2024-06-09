@@ -9,7 +9,7 @@
     align-items: center;
 }
 
-.product-img{
+.product-image{
     text-align: center;
     color: var(--mainWhite);
     font-size: 2em;
@@ -19,7 +19,7 @@
   margin-top: 3em;
 }
 
-.product-feature h2{
+.item-product h2{
     text-align: center;
     text-transform: capitalize;
     font-size: 2em;
@@ -31,13 +31,15 @@
     flex-wrap: wrap;
     width: 100%;
     gap: 3%;
-    margin-right: 0;
   }
   .gategories-product a{
     color: var(--mainTextColor);
     font-size: 0.8em;
     font-weight: 600;
     text-transform: capitalize;
+  }
+  .gategories-product a:hover{
+    opacity: 0.5;
   }
   
   .gategories-product > div {
