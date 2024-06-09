@@ -4,7 +4,7 @@
     position: relative;
     overflow: hidden;
 } */
-.vid-main>div {
+.video-main>div {
     display: flex;
     justify-content: flex-end;
     position: relative;
@@ -34,7 +34,7 @@
     margin-bottom: 0.6em;
 }
 
-.frame {
+.video-iframe {
     margin-right: 1.8em;
     width: 70%;
 }
@@ -55,12 +55,12 @@ iframe {
     /* .content-vid{
         margin: 0 1em;
     } */
-    .vid-main>div {
+    .video-main>div {
         /* margin: 0 1em; */
         flex-direction: column;
     }
 
-    .frame {
+    .video-iframe {
         width: 100%;
     }
 
