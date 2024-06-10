@@ -13,7 +13,8 @@
     color:var(--mainWhite);
 }
 .image-text h1{
-    font-size: 3.16em;
+    /* font-size: 3.16em; */
+    font-size: 55px;
     font-weight: 700;
 }
 
@@ -26,7 +27,7 @@
     padding: 14px 58px;
     margin: 20px;
     margin-left: 28px;
-    font-size: 0.8rem;
+    font-size: 14px;
     border: 1px solid var(--mainWhite);
     color: var(--mainWhite);
     text-transform: uppercase;
@@ -43,7 +44,8 @@
         display: inline-block;
     }
     .image-text h1{
-        font-size: 2.2em;
+        /* font-size: 2.2em; */
+        font-size: 35px;
         font-weight: 600;
         padding: 15px;
     }   
