@@ -31,6 +31,9 @@
 .card-style {
     width: 32%;
 }
+.card-style img{
+    width: 100%;
+}
 .card-style a{
     text-transform: capitalize;
     color:var(--mainTextColor);
