@@ -1,17 +1,17 @@
 /* The fourth section */
 .solution-main{
-    margin-top: 2em;
+    margin-top: 35px;
 }
 
 .solution-main h2 {
     text-align: center;
-    font-size: 1.8em;
+    font-size: 30px;
 }
 
 .rental{
     display: flex;
-    gap: 1.5em;
-    margin: 1.5em 0;
+    gap: 20px;
+    margin: 20px 0;
 }
 
 .rental img {
@@ -23,7 +23,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.2em;
+    gap: 18px;
 }
 
 .rental-content span {
@@ -41,14 +41,14 @@
 .half-border::before{
     content: "";
     position: absolute;
-    bottom: -0.3em;
-    left: 0;
-    width: 2em;
+    bottom: -6px;
+    left: 1%;
+    width: 22px;
     border-bottom: 2px solid var(--solutionSpanColor);
 }
 
 .rental-content h3 {
-    font-size: 1.5em;
+    font-size: 23px;
 }
 
 .rental-content a {
@@ -62,14 +62,14 @@
 
 .custom {
     display: flex;
-    gap: 1.5em;
+    gap: 20px;
 }
 
 .custom-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.5em;
+    gap: 18px;
 }
 
 .custom img {
@@ -84,7 +84,7 @@
 }
 
 .custom-content h3 {
-    font-size: 1.5em;
+    font-size: 23px;
 }
 
 .custom-content a {
@@ -103,7 +103,7 @@
 /* How the section react in responsive */
 @media screen and (max-width:950px){
     .solution-main{
-        margin-top: 1em;
+        margin-top: 17px;
     }
     .rental {
         flex-direction: column-reverse;
