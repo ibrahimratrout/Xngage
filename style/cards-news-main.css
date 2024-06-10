@@ -1,11 +1,11 @@
 /* cards design */
 .cards-news-main{
-    margin-top: 2em;
+    margin-top: 35px;
 }
 .caption-card h2{
     text-transform: capitalize;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 30px;
 }
 .caption-card span{
     display: flex;
@@ -16,7 +16,7 @@
     color: var(--solutionSpanColor);
     text-transform: capitalize;
     font-weight: 600;
-    font-size: 0.9em;
+    font-size: 14px;
 }
 
 
@@ -24,7 +24,7 @@
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin: 1em 0;
+    margin: 16px 0;
 }
 
 
@@ -41,23 +41,23 @@
 }
 
 .content-card {
-    padding: 1.5em 0;
+    padding: 22px 0;
 }
 
 .content-card h3 {
-    margin-bottom: 1em;
+    margin-bottom: 14px;
 }
 
 .content-card p {
-    font-size: 0.9em;
-    margin-bottom: 1em;
+    font-size: 15px;
+    margin-bottom: 16px;
 }
 
 
 .arrow-card-right {
     background-color: var(--mainTextColor);
-    width: 3em;
-    height: 3em;
+    width: 48px;
+    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,8 +73,8 @@
 
 .arrow-card-left {
     background-color: var(--mainTextColor);
-    width: 3em;
-    height: 3em;
+    width: 48px;
+    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,7 +96,7 @@
 
 @media screen and (min-width:601px) and (max-width:950px){
     .cards-news-main{
-        margin-top: 0.5em;
+        margin-top: 17px;
     }
     .caption-card span{
         margin-right: 5%;
@@ -129,13 +129,14 @@
 
 
 @media screen and (max-width:600px){
+    .cards-news-main{
+        margin-top: 17px;
+    }
     .all-cards {
         justify-content: center;
-        margin-top: 0.5em;
+        margin-top: 10px;
     }
-    .cards-news-main{
-        margin-top: 0.5em;
-    }
+    
     .caption-card span{
         margin-top: 3%;
         justify-content: center;
