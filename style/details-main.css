@@ -10,7 +10,6 @@
 
 .details-main .title-details {
     font-size: 18px;
-    line-height: 105px;
     display: flex;
     align-items: center;
     padding-right: 35px;
@@ -21,9 +20,7 @@
 
 .details-main .information-datails {
     font-size: 18px;
-    padding-top: 10px;
-    padding-left: 30px;
-    padding-right: 270px;
+    padding: 10px 270px 10px 30px;
 }
 
 .details-main .box-details {
@@ -69,15 +66,14 @@
 
     .details-main .information-datails {
         font-size: 16px;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0;
         margin-bottom: 20px;
     }
 
     .details-main .box-details {
         position: static;
         line-height: 30px;
-        max-width: inherit;
+        max-width: 100%;
         background-position: 98% bottom;
         background-size: 125px;
     }
