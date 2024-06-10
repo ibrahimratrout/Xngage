@@ -15,7 +15,7 @@
 }
 
 .rental img {
-    max-width: 900px;
+    max-width: 950px;
     height: auto;
 }
 
@@ -73,7 +73,7 @@
 }
 
 .custom img {
-    max-width: 900px;
+    max-width: 950px;
     height: auto;
 }
 
@@ -101,7 +101,7 @@
 
 
 /* How the section react in responsive */
-@media screen and (max-width:950px){
+@media screen and (max-width:980px){
     .solution-main{
         margin-top: 17px;
     }

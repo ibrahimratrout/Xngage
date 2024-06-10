@@ -146,7 +146,7 @@ footer {
     display: none;
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:980px) {
     footer .container {
         padding: 10px 0;
     }

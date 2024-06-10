@@ -44,7 +44,7 @@ iframe {
 
 
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:980px) {
     /* third section */
     .video-main>div {
         flex-direction: column;
