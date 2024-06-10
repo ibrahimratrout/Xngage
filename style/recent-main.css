@@ -1,9 +1,9 @@
 .recent-viewed-main {
-  margin: 2em 0;
+  margin-top: 35px;
 }
 
 .recent-viewed-main h2 {
-  margin: 0 0 1.5em;
+  margin-bottom: 25px;
   text-align: center;
   text-transform: capitalize;
 }
@@ -16,8 +16,8 @@
 
 .arrow-card-right-recent {
   background-color: var(--mainTextColor);
-  width: 3em;
-  height: 3em;
+  width: 48px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,8 +30,8 @@
 
 .arrow-card-left-recent {
   background-color: var(--mainTextColor);
-  width: 3em;
-  height: 3em;
+  width: 48px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +50,6 @@
 .card-recent-style {
   border: 1px solid var(--notiBackground);
   width: 23%;
-  /* margin: auto; */
   background-color: var(--mainWhite);
 }
 
@@ -74,26 +73,25 @@
 }
 
 .content-recent-card h4 {
-  margin-bottom: 1.5em;
+  margin-bottom: 25px;
 }
 
 .price {
   color: var(--mainTextColor);
-  font-size: 0.8em;
+  font-size: 14px;
   margin-bottom: 8%;
 }
 
-.cardButton {
+.card-button {
   border: none;
-  outline: 0;
-  padding: 0.7em;
+  padding: 12px;
   color: var(--mainWhite);
   background-color: var(--mainTextColor);
   text-align: center;
   cursor: pointer;
   width: 100%;
-  font-size: 0.8em;
-  text-transform: uppercase
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .card-recent-style button:hover {
@@ -101,11 +99,11 @@
 }
 
 
-.donotcross {
+.do-not-cross {
   left: 0;
-  top: 0.8em;
+  top: 12px;
   position: absolute;
-  padding: 0.6em;
+  padding: 8px;
   margin: 0;
   width: 100%;
   background-image: -webkit-linear-gradient(130deg, #ffffff00 35%, rgb(212, 223, 229) 35%);
@@ -114,7 +112,7 @@
 
 @media screen and (min-width:601px) and (max-width:900px) {
   .recent-main {
-    margin-top: 1.5em;
+    margin-top: 17px;
   }
 
   .card2,
@@ -125,6 +123,7 @@
   .card-recent-style {
     width: 40%;
   }
+
   .cards-recent {
     justify-content: space-around;
   }
@@ -134,7 +133,7 @@
 @media screen and (max-width:600px) {
 
   .recent-main {
-    margin-top: 1.5em;
+    margin-top: 17px;
   }
 
   .card2,
