@@ -1,14 +1,14 @@
 /* Design for second section */
- .details-main{
+.details-main {
     margin-top: 25px;
- }
+}
 
-.details-main> div{
+.details-main>div {
     display: flex;
     position: relative;
-} 
+}
 
-.details-main .title-details{
+.details-main .title-details {
     font-size: 18px;
     line-height: 105px;
     display: flex;
@@ -19,14 +19,14 @@
     border-right: 2px solid var(--notiBackground);
 }
 
-.details-main .information-datails{
+.details-main .information-datails {
     font-size: 18px;
     padding-top: 10px;
     padding-left: 30px;
     padding-right: 270px;
 }
 
-.details-main .box-details{
+.details-main .box-details {
     position: absolute;
     background-color: var(--mainRed);
     font-size: 17.5px;
@@ -41,39 +41,40 @@
     color: var(--mainWhite);
 }
 
-.box-details p{
+.box-details p {
     margin-bottom: 14px;
 }
 
-.box-details a{
+.box-details a {
     color: var(--mainWhite);
     font-size: 14px;
 }
 
 
 
-@media screen and (max-width:900px){
+@media screen and (max-width:900px) {
+
     /* the second section in the main */
-    .details-main>div{
+    .details-main>div {
         display: inline-block;
     }
 
-    .details-main .title-details{
+    .details-main .title-details {
         padding-right: 0;
         line-height: 0;
         justify-content: center;
         border: 0;
         padding: 20px;
     }
-    
-    .details-main .information-datails{
+
+    .details-main .information-datails {
         font-size: 16px;
         padding-left: 0;
         padding-right: 0;
         margin-bottom: 20px;
     }
 
-    .details-main .box-details{
+    .details-main .box-details {
         position: static;
         line-height: 30px;
         max-width: inherit;
