@@ -1,14 +1,14 @@
 .discover-main{
-    margin: 2em 0;
+    margin-top: 35px;
 }
 .discover-main h2{
     text-align: center;
-    font-size: 2em;
+    font-size: 30px;
 }
 
 .contain-discover{
     display: flex;
-    margin: 2em 0; 
+    margin: 35px 0;
     gap: 3%; 
     color: var(--mainWhite);
 }
@@ -25,24 +25,25 @@
 }
 .left-wall-content{
     width: 50%; 
-    padding: 2em;
+    padding: 30px;
 }
 .left-wall-content h4{
-    margin-bottom: 4em;
+    margin-bottom: 55px;
     font-weight: 100;
 }
 .left-wall-content h3{
-    font-size: 1.7em;
-    margin-bottom: 1em;
+    font-size: 30px;
+    margin-bottom: 16px;
 }
 .left-wall-content p{
-    font-size: 0.85em;
+    font-size: 14px;
     font-weight: 300;
 }
 .left-wall-content a{
     color: var(--mainWhite);
-    margin-top: 1.5em;
-    
+}
+.left-wall-content a:hover{
+    opacity: 0.5;
 }
 
 
@@ -58,36 +59,36 @@
 }
 .right-wall-content{
     width: 50%; 
-    padding: 2em;
+    padding: 30px;
 }
 
 .right-wall-content h4{
-    margin-bottom: 4em;
+    margin-bottom: 55px;
     font-weight: 100;
 }
 .right-wall-content h3{
-    font-size: 1.7em;
-    margin-bottom: 1em;
+    font-size: 30px;
+    margin-bottom: 16px;
 }
 .right-wall-content p{
-    font-size: 0.85em;
+    font-size: 14px;
     font-weight: 300;
 }
 .right-wall-content a{
     color: var(--mainWhite);
-    margin-top: 1.5em;
-    
 }
-
+.right-wall-content a:hover{
+    opacity: 0.5;
+}
 
 
 @media screen and (min-width:601px) and (max-width:900px){
     .discover-main{
-        margin: 1em 0;
+        margin: 20px 0;
     }
     .contain-discover{
         flex-direction: column;
-        gap: 2em;
+        gap: 35px;
     }
     .left-wall{
         min-width: 100%;
@@ -100,11 +101,11 @@
 
 @media screen and (max-width:600px){
     .discover-main{
-        margin: 1em 0;
+        margin: 20px 0;
     }
     .contain-discover{
         flex-direction: column;
-        gap: 2em;
+        gap: 35px;
     }
     .left-wall{
         flex-direction: column;
@@ -115,11 +116,11 @@
         height: 200px;
     }
     .left-wall-content{
-        padding: 1em;
+        padding: 16px;
         width: 100%;
     }
     .left-wall-content h4{
-        margin-bottom: 2em;
+        margin-bottom: 27px;
     }
     .right-wall{
         flex-direction: column;
@@ -130,11 +131,11 @@
         height: 200px;
     }
     .right-wall-content{
-        padding: 1em;
+        padding: 16px;
         width: 100%;
     }
     .right-wall-content h4{
-        margin-bottom: 2em;
+        margin-bottom: 27px;
     }
     
 }
