@@ -16,6 +16,23 @@
     justify-content: center;
     gap: 15px;
 }
+.rental-industries-content span{
+    color: var(--solutionSpanColor);
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.rental-industries-content h3{
+    font-size: 23px;
+}
+.rental-industries-content a{
+    font-weight: 600;
+    color: var(--mainTextColor);
+    align-self: flex-start;
+}
+.rental-industries-content a:hover{
+    opacity: 0.5;
+}
 
 .reverse-cms{
     flex-direction: row-reverse;
