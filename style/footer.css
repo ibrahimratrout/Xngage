@@ -67,16 +67,19 @@ footer {
     color: var(--mainWhite);
     text-transform: capitalize;
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 
 .column-footer h4::before {
     content: "";
     position: absolute;
-    bottom: 25%;
+    /* bottom: 25%;
     left: 7%;
-    width: 35%;
+    width: 35%; */
+    bottom: 6px;
+    left: 3%;
+    width: 30px;
     border-bottom: 2px solid var(--mainWhite);
 }
 
@@ -207,7 +210,6 @@ footer {
     .product-heading,
     .connect-heading {
         display: flex;
-        justify-content: flex-end;
         background-color: var(--mainTextColor);
         font-size: 14px;
     }
@@ -225,9 +227,9 @@ footer {
     .solution-heading label,
     .product-heading label,
     .connect-heading label {
-        display: inline-block;
-        padding: 1em;
+        padding: 14px;
         color: var(--mainWhite);
+        margin-top: 1px;
     }
   
 
