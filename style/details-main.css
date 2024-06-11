@@ -52,12 +52,14 @@
 @media screen and (max-width:980px) {
 
     /* the second section in the main */
+    .details-main {
+        margin-top: 15px;
+    }
     .details-main>div {
         display: inline-block;
     }
 
     .details-main .title-details {
-        padding-right: 0;
         line-height: 0;
         justify-content: center;
         border: 0;
